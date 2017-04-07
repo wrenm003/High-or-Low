@@ -44,11 +44,6 @@ def main():
             deck['Heart-K'] = x
             deck['Spade-K'] = x
 
-    minDeck = 0
-    print(deck)
-    dealer_card1 = random.choice(list(deck.keys()))
-    print(dealer_card1)
-    print(deck[dealer_card1])
     print("When the game starts, type \"h\" for higher or \"l\" for lower!")
     print("To play again, type \"y\" or \"yes\" when prompted")
 
@@ -58,7 +53,6 @@ def main():
         dealer_card1_value = deck[dealer_card1]
         print("Dealer's card is: " + dealer_card1)
         del deck[dealer_card1]
-        print(deck)
         player_choice = input("Player wants higher or lower?")
         dealer_card2 = random.choice(list(deck.keys()))
         dealer_card2_value = deck[dealer_card2]
